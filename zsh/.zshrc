@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions git web-search catimg osx tmux last-working-dir extract sudo)
+plugins=(incr zsh-autosuggestions git web-search catimg osx tmux last-working-dir extract sudo)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -97,3 +97,4 @@ alias p='python'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.oh-my-zsh/plugins/incr/incr.zsh
