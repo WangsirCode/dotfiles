@@ -95,6 +95,7 @@ alias v='vim'
 alias p='python'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
+alias rmpng='rm ~/Desktop/*.png'
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
