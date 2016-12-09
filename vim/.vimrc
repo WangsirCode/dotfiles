@@ -12,6 +12,8 @@ let python_highlight_all=1
 let g:syntastic_always_populate_loc_list = 1
 "Errors 就可以在修复错误之后自动更新它的底部描述。
 let g:syntastic_check_on_open = 1
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
 "open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
@@ -55,6 +57,8 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 " 定义快捷键关闭当前分割窗口
 nmap <Leader>q :q<CR>
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
  " 定义快捷键保存当前窗口内容
 nmap <Leader>w :w<CR>
 " " 定义快捷键保存所有窗口内容并退出 vim

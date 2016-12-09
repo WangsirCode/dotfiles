@@ -12,6 +12,14 @@ use:
 - :Doxlic command
 
 
+###youCompleteme
+设置文档跳转
+
+```
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+```
+
+
 
 
 
