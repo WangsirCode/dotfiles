@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(man zsh-autosuggestions git web-search catimg osx tmux last-working-dir extract sudo)
+plugins=(man zsh-autosuggestions git web-search  osx tmux last-working-dir extract sudo)
 
 
 source $ZSH/oh-my-zsh.sh

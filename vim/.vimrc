@@ -95,6 +95,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
 Plug 'Raimondi/delimitMate'
+Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
