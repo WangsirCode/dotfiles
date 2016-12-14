@@ -16,7 +16,15 @@ use:
 设置文档跳转
 
 ```
+" 跳转到定义处, 分屏打开
+let g:ycm_goto_buffer_command = 'horizontal-split'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+```
+###tagList
+显示文件中结构体，函数定义灯信息
+
+```
+:TlistOpen
 ```
 
 

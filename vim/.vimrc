@@ -57,6 +57,7 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 " 定义快捷键关闭当前分割窗口
 nmap <Leader>q :q<CR>
+let g:ycm_goto_buffer_command = 'horizontal-split'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
  " 定义快捷键保存当前窗口内容
