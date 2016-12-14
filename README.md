@@ -22,6 +22,13 @@ nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ```
 ###tagList
 显示文件中结构体，函数定义灯信息
+**in vimrc**
+
+```
+"open taglist with Ctrl + m
+ map <C-m> :TlistOpen<CR>
+```
+**usage**:
 
 ```
 :TlistOpen

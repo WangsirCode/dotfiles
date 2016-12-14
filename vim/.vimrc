@@ -16,7 +16,8 @@ let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 "open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-
+"open taglist with Ctrl + m
+map <C-m> :TlistOpen<CR>
 " 开启实时搜索功能
 set incsearch
 " " 搜索时大小写不敏感
