@@ -54,16 +54,7 @@ let g:syntastic_check_on_open = 1
 "NERDTree 相关设置
 "open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-" 依次遍历子窗口
-nnoremap nw <C-W><C-W>
-" 跳转至右方的窗口
-nnoremap <Leader>lw <C-W>l
-" 跳转至左方的窗口
-nnoremap <Leader>hw <C-W>h
-" 跳转至上方的子窗口
-nnoremap <Leader>kw <C-W>k
-" 跳转至下方的子窗口
-nnoremap <Leader>jw <C-W>j
+w
 
 "taglist 相关设置
 "open taglist with Ctrl + m
