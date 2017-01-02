@@ -55,6 +55,13 @@ let g:ycm_goto_buffer_command = 'horizontal-split'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ```
 
+###ctrlp
+
+**使用**
+```
+Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
+```
+
 ###NERDTree
 **配置**
 
