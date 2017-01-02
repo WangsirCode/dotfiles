@@ -1,5 +1,4 @@
 set nu
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
 syntax enable
 syntax on
 set background=dark
@@ -37,10 +36,7 @@ set tabstop=4
 let g:ycm_python_binary_path = 'python'
 let python_highlight_all=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-
-let g:ycm_goto_buffer_command = 'horizontal-split'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 
 
 "systastic 相关设置
@@ -54,7 +50,6 @@ let g:syntastic_check_on_open = 1
 "NERDTree 相关设置
 "open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-w
 
 "taglist 相关设置
 "open taglist with Ctrl + m
@@ -75,7 +70,8 @@ nmap <Leader>Q :qa!<CR>
 nmap <Leader>M %
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 nmap <F8> :TagbarToggle<CR>
-
+nmap <Leader>, :bp<CR>
+nmap <Leader>. :bn<CR>
 " 定义快捷键到行首和行尾
 nmap LB 0
 nmap LE $

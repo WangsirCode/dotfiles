@@ -26,6 +26,9 @@ nmap <Leader>M %
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 nmap <F8> :TagbarToggle<CR>
 
+" 返回上一个文件和下一个文件
+namp <Leader>, :cp
+nmap <Leader>. :cn 
 " 定义快捷键到行首和行尾
 nmap LB 0
 nmap LE $
