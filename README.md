@@ -57,15 +57,24 @@ nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ###ctrlp
 
 **使用**
+
 ```
 Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
 ```
 
 ###tagbar
 **配置**
+
+```
 nmap <F8> :TagbarToggle<CR>
+```
 
+###delimitMate
+**使用**
 
+```
+shift + tab 跳到补全后的符号后面继续编辑
+```
 
 ###NERDTree
 **配置**

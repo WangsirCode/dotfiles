@@ -82,7 +82,6 @@ nmap <Leader>q :q<CR>
 
 
 
-
 " vundle 环境设置
 "filetype off
 "set rtp+=~/.vim/bundle/Vundle.vim
