@@ -21,10 +21,6 @@ nnoremap <Leader>hw <C-W>h
 nnoremap <Leader>kw <C-W>k
 " 跳转至下方的子窗口
 nnoremap <Leader>jw <C-W>j
-" 定义快捷键在结对符之间跳转
-nmap <Leader>M %
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
-nmap <F8> :TagbarToggle<CR>
 
 " 返回上一个文件和下一个文件
 namp <Leader>, :cp
@@ -64,6 +60,12 @@ nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ```
 Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
 ```
+
+###tagbar
+**配置**
+nmap <F8> :TagbarToggle<CR>
+
+
 
 ###NERDTree
 **配置**

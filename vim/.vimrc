@@ -38,6 +38,8 @@ let python_highlight_all=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" tagbar相关设置
+nmap <F8> :TagbarToggle<CR>
 
 "systastic 相关设置
 "Errors 就可以在修复错误之后自动更新它的底部描述
@@ -66,10 +68,6 @@ nmap <Leader>w :w<CR>
 nmap <Leader>WQ :wa<CR>:q<CR>
 " 不做任何保存，直接退出 vim
 nmap <Leader>Q :qa!<CR>
-" 定义快捷键在结对符之间跳转
-nmap <Leader>M %
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
-nmap <F8> :TagbarToggle<CR>
 nmap <Leader>, :bp<CR>
 nmap <Leader>. :bn<CR>
 " 定义快捷键到行首和行尾
@@ -90,12 +88,7 @@ nmap <Leader>q :q<CR>
 "set rtp+=~/.vim/bundle/Vundle.vim
 call plug#begin('~/.vim/bundle')
 Plug 'VundleVim/Vundle.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'pangloss/vim-javascript'
-Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'kien/ctrlp.vim'
@@ -104,6 +97,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'Valloric/YouCompleteMe'
+Plug 'vim-indent-guides'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
