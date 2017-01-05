@@ -124,9 +124,9 @@ gt 后一个 tab
 
 ##2.ZSH
 ###installation
-1.sudo agt-get install zsh
-2.chsh -s /bin/zsh
-3.install oh-my-zsh
+1. sudo agt-get install zsh
+2. chsh -s /bin/zsh
+3. install oh-my-zsh
 `
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 `
