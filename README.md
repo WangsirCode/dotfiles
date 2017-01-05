@@ -130,6 +130,7 @@ gt 后一个 tab
 `
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 `
+
 ###alias
 ```
 alias server="ssh -i ~/Downloads/mykey ubuntu@115.159.212.140"
@@ -148,31 +149,35 @@ alias rmpng='rm ~/Desktop/*.png'
 ###plugin
 
 ####autojump
-1.brew install autojump (mac)
+
+1. brew install autojump (mac)
   sodu apt-get install autojump(linux)
-2.insert these code into .zshrc
+2. insert these code into .zshrc
 `
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 `
-3.Activate the plugin in ~/.zshrc:
+3. Activate the plugin in ~/.zshrc:
 `
 plugins=( [plugins...] autojump)
 `
+
 ####zsh-syntax-highlighting
-1.Clone this repository in oh-my-zsh's plugins directory
+
+1. Clone this repository in oh-my-zsh's plugins directory
 `
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 `
-2.Activate the plugin in ~/.zshrc:
+2 .Activate the plugin in ~/.zshrc:
 `
 plugins=( [plugins...] zsh-syntax-highlighting)
 `
+
 ####zsh-autosuggestions
-1.Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
+1 .Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
 `
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 `
-2.Add the plugin to the list of plugins for Oh My Zsh to load:
+2. Add the plugin to the list of plugins for Oh My Zsh to load:
 plugins=(zsh-autosuggestions)
 
 
