@@ -97,5 +97,7 @@ alias p='python'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias rmpng='rm ~/Desktop/*.png'
+alias tmuxconf='vim ~/.tmux.conf'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

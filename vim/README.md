@@ -158,3 +158,16 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
+###fzf
+模糊查找插件
+
+- 使用
+
+    ```
+    :Ag 查找代码
+    :FZF 查找文件
+    ```
+
+----
+
+
