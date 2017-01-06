@@ -38,89 +38,89 @@ nmap <Leader>q :q<CR>
 ###DoxygenToolkit
 comment plugin for C, C++ or Python function or class
 
-**使用**
+- **使用**
 
-- :Dox command 
-- :DoxAuthor command
-- :Doxlic command
+    - :Dox command 
+    - :DoxAuthor command
+    - :Doxlic command
 
 
 ###youCompleteme
-**配置**
-
-```
-" 跳转到定义处, 分屏打开
-let g:ycm_goto_buffer_command = 'horizontal-split'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-```
+- 配置
+    
+    ```
+    " 跳转到定义处, 分屏打开
+    let g:ycm_goto_buffer_command = 'horizontal-split'
+    nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+    ```
 
 ###ctrlp
 
-**使用**
+-  使用
 
-```
-Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
-```
+    ```
+    Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
+    ```
 
 ###tagbar
-**配置**
+- 配置
 
-```
-nmap <F8> :TagbarToggle<CR>
-```
+    ```
+    nmap <F8> :TagbarToggle<CR>
+    ```
 
 ###delimitMate
-**使用**
+- 使用
 
-```
-shift + tab 跳到补全后的符号后面继续编辑
-
-```
+    ```
+    shift + tab 跳到补全后的符号后面继续编辑
+    ```
 
 ###NERDTree
-**配置**
+1. 配置
 
-```
-"open NERDTree with Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
-" 依次遍历子窗口
-nnoremap nw <C-W><C-W>
-" 跳转至右方的窗口
-nnoremap <Leader>lw <C-W>l
-" 跳转至左方的窗口
-nnoremap <Leader>hw <C-W>h
-" 跳转至上方的子窗口
-nnoremap <Leader>kw <C-W>k
-" 跳转至下方的子窗口
-nnoremap <Leader>jw <C-W>j
-```
+   ```
+   "open NERDTree with Ctrl+n
+   map <C-n> :NERDTreeToggle<CR>
+   " 依次遍历子窗口
+   nnoremap nw <C-W><C-W>
+   " 跳转至右方的窗口
+   nnoremap <Leader>lw <C-W>l
+   " 跳转至左方的窗口
+   nnoremap <Leader>hw <C-W>h
+   " 跳转至上方的子窗口
+   nnoremap <Leader>kw <C-W>k
+   " 跳转至下方的子窗口
+   nnoremap <Leader>jw <C-W>j
+   ```
 
-**使用**
+2. 使用
 
-```
-ctrl + w + h 光标 focus 左侧树形目录 
-ctrl + w + l 光标 focus 右侧文件显示窗口
-ctrl + w + w    光标自动在左右侧窗口切换 #！！！
-i split 一个新窗口打开选中文件，并跳到该窗口
-t       在新 Tab 中打开选中文件/书签，并跳到新 Tab
-gT 前一个 tab 
-gt 后一个 tab
-```
+    ```
+    ctrl + w + h 光标 focus 左侧树形目录 
+    ctrl + w + l 光标 focus 右侧文件显示窗口
+    ctrl + w + w    光标自动在左右侧窗口切换 #！！！
+    i split 一个新窗口打开选中文件，并跳到该窗口
+    t       在新 Tab 中打开选中文件/书签，并跳到新 Tab
+    gT 前一个 tab 
+    gt 后一个 tab
+    ```
 
 ###tagList
 显示文件中结构体，函数定义等信息
 
-**配置**
+1. 配置
 
-```
-"open taglist with Ctrl + m
- map <C-m> :TlistOpen<CR>
-```
-**使用**
+    ```
+    "open taglist with Ctrl + m
+     map <C-m> :TlistOpen<CR>
+    ```
+    
+2. 使用
 
-```
-:TlistOpen
-```
+    ```
+    :TlistOpen
+    ```
 
 
 ##2.ZSH
