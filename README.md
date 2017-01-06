@@ -190,8 +190,10 @@ alias rmpng='rm ~/Desktop/*.png'
     ```
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load:
-plugins=(zsh-autosuggestions)
 
+    ```
+    plugins=(zsh-autosuggestions)
+    ```
 
 
 
