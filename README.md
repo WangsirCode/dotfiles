@@ -74,6 +74,7 @@ nmap <F8> :TagbarToggle<CR>
 
 ```
 shift + tab 跳到补全后的符号后面继续编辑
+
 ```
 
 ###NERDTree
@@ -127,9 +128,11 @@ gt 后一个 tab
 1. sudo agt-get install zsh
 2. chsh -s /bin/zsh
 3. install oh-my-zsh
-`
+
+
+```
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-`
+```
 
 ###alias
 ```
@@ -154,38 +157,37 @@ alias rmpng='rm ~/Desktop/*.png'
   sodu apt-get install autojump(linux)
 2. insert these code into .zshrc
 
-```
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-```
+    ```
+    [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+    ```
 
 3. Activate the plugin in ~/.zshrc:
 
 
-```
-plugins=( [plugins...] autojump)
-```
+    ```
+    plugins=( [plugins...] autojump)
+    ```
 
 ####zsh-syntax-highlighting
 
 1. Clone this repository in oh-my-zsh's plugins directory
 
-```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
+    ```
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
 
-2 .Activate the plugin in ~/.zshrc:
+2. Activate the plugin in ~/.zshrc:
 
-```
-plugins=( [plugins...] zsh-syntax-highlighting)
-```
+    ```
+    plugins=( [plugins...] zsh-syntax-highlighting)
+    ```
 
 ####zsh-autosuggestions
-1 .Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
+1. Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
 
-
-```
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-```
+    ``` 
+    git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+    ```
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load:
 plugins=(zsh-autosuggestions)
