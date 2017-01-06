@@ -42,6 +42,10 @@ alias rmpng='rm ~/Desktop/*.png'
     ```
     plugins=( [plugins...] autojump)
     ```
+    
+
+    
+----
 
 ###zsh-syntax-highlighting
 
@@ -56,6 +60,10 @@ alias rmpng='rm ~/Desktop/*.png'
     ```
     plugins=( [plugins...] zsh-syntax-highlighting)
     ```
+    
+
+    
+---
 
 ###zsh-autosuggestions
 1. Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
@@ -69,4 +77,8 @@ alias rmpng='rm ~/Desktop/*.png'
     ```
     plugins=(zsh-autosuggestions)
     ```
+    
+
+    
+----
 

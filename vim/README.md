@@ -45,6 +45,7 @@ comment plugin for C, C++ or Python function or class
     - :DoxAuthor command
     - :Doxlic command
 
+----
 
 ###youCompleteme
 - 配置
@@ -54,6 +55,8 @@ comment plugin for C, C++ or Python function or class
     let g:ycm_goto_buffer_command = 'horizontal-split'
     nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
     ```
+    
+----
 
 ###ctrlp
 
@@ -62,6 +65,8 @@ comment plugin for C, C++ or Python function or class
     ```
     Run :CtrlP or :CtrlP [starting-directory] to invoke CtrlP in find file mode.
     ```
+    
+----
 
 ###tagbar
 - 配置
@@ -69,6 +74,9 @@ comment plugin for C, C++ or Python function or class
     ```
     nmap <F8> :TagbarToggle<CR>
     ```
+    
+    
+----
 
 ###delimitMate
 - 使用
@@ -76,6 +84,9 @@ comment plugin for C, C++ or Python function or class
     ```
     shift + tab 跳到补全后的符号后面继续编辑
     ```
+
+    
+----
 
 ###NERDTree
 1. 配置
@@ -106,6 +117,9 @@ comment plugin for C, C++ or Python function or class
     gT 前一个 tab 
     gt 后一个 tab
     ```
+    
+    
+----
 
 ###tagList
 显示文件中结构体，函数定义等信息
@@ -123,6 +137,9 @@ comment plugin for C, C++ or Python function or class
     :TlistOpen
     ```
 
+
+----
+
 ###nerdcommenter
 快速注释插件
 
@@ -136,4 +153,8 @@ comment plugin for C, C++ or Python function or class
     ,cA，在当前行尾添加注释符，并进入Insert模式
     ,cu，取消注释
     ```
+    
+
+    
+----
 
