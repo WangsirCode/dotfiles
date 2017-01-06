@@ -1,6 +1,9 @@
 set nu
+" 开启语法高亮功能
 syntax enable
+" 允许用指定语法高亮配色方案替换默认方案
 syntax on
+
 set background=dark
 colorscheme solarized
 set encoding=utf-8
@@ -20,7 +23,8 @@ set cursorline
 filetype on
 "开启文件检测
 filetype plugin on
-
+  
+" 代码缩进
 " 设置格式化时制表符占用空格数
 set shiftwidth=4
 " 自适应不同语言的智能缩进
@@ -29,7 +33,8 @@ filetype indent on
 set expandtab
 " 设置编辑时制表符占用空格数
 set tabstop=4
-
+" 让 vim 把连续数量的空格视为一个制表符
+set softtabstop=4
 
 
 "YCM相关设置
@@ -38,15 +43,23 @@ let python_highlight_all=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+"vim-indent-guides相关设置
+" 随 vim 自启动
+let g:indent_guides_enable_on_vim_startup=1
+" 从第二层开始可视化显示缩进
+let g:indent_guides_start_level=2
+" 色块宽度
+let g:indent_guides_guide_size=1
+
 " tagbar相关设置
 nmap <F8> :TagbarToggle<CR>
+
 
 "systastic 相关设置
 "Errors 就可以在修复错误之后自动更新它的底部描述
 let g:syntastic_always_populate_loc_list = 1
 "Errors 就可以在修复错误之后自动更新它的底部描述。
 let g:syntastic_check_on_open = 1
-
 
 
 "NERDTree 相关设置
@@ -96,8 +109,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'Valloric/YouCompleteMe'
-Plug 'vim-indent-guides'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/fzf.vim'
 call plug#end()
 "filetype plugin indent on
