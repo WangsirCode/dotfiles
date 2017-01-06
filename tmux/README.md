@@ -20,6 +20,14 @@ bind l select-pane -R
 
 # 支持鼠标模式
 set -g mouse on
+
+# 按下<Escape>进入拷贝模式，v进行选择，y拷贝所选内容，p进行粘贴
+bind Escape copy-mode
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-selection
+unbind p
+bind p pasteb
+setw -g mode-keys vi      # Vi风格选择文本
 ```
 
 ##2.相关使用
