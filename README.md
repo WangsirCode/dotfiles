@@ -122,6 +122,19 @@ comment plugin for C, C++ or Python function or class
     :TlistOpen
     ```
 
+###nerdcommenter
+快速注释插件
+
+- 使用
+
+    ```
+    ,ca，在可选的注释方式之间切换，比如C/C++ 的块注释和行注释//
+    ,cc，注释当前行
+    ,c，切换注释/非注释状态
+    ,cs，以”性感”的方式注释
+    ,cA，在当前行尾添加注释符，并进入Insert模式
+    ,cu，取消注释
+    ```
 
 ##2.ZSH
 ###installation
