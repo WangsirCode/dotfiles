@@ -5,7 +5,8 @@ syntax enable
 syntax on
 
 set background=dark
-colorscheme solarized
+colorscheme desert 
+let g:solarized_termcolors=256
 set encoding=utf-8
 " 开启实时搜索功能
 set incsearch
@@ -70,8 +71,25 @@ map <C-n> :NERDTreeToggle<CR>
 "open taglist with Ctrl + m
 map <C-m> :TlistOpen<CR>
 
+" markdown-preview.vim
+" path to the chrome or the command to open chrome(or other modern browsers)
+let g:mkdp_path_to_chrome = "google-chrome"
+" set to 1, the vim will open the preview window once enter the markdown
+"buffer
+let g:mkdp_auto_start = 1 
+" set to 1, the vim will auto open preview window when you edit the
+"markdown file
+let g:mkdp_auto_open = 1
+" set to 1, the vim will auto close current preview window when change
+"from markdown buffer to another buffer
+let g:mkdp_auto_close = 1
 
-
+" set to 1, the vim will just refresh markdown when save the buffer or
+"leave from insert mode, default 0 is auto refresh markdown as you edit or move the cursor
+let g:mkdp_refresh_slow = 0
+" set to 1, the MarkdownPreview command can be use for all files,
+" by default it just can be use in markdown file
+let g:mkdp_command_for_global = 0
 "一些系统快捷键设置
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
@@ -112,5 +130,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/fzf.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 "filetype plugin indent on

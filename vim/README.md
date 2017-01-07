@@ -170,4 +170,51 @@ comment plugin for C, C++ or Python function or class
 
 ----
 
+###markdown-preview.vim
+markdown预览插件
 
+1. Installation
+
+    ```
+    Plug 'iamcco/mathjax-support-for-mkdp'
+    Plug 'iamcco/markdown-preview.vim'
+    ```
+
+2. Usage
+    ```
+    MarkdownPreview
+    " open preview window in markdown buffer
+
+    MarkdownPreviewStop
+    " close the preview window and server 
+    ```
+3. Defaul Setting
+    ```
+    let g:mkdp_path_to_chrome = "google-chrome"
+    " path to the chrome or the command to open chrome(or other modern browsers)
+
+    let g:mkdp_auto_start = 0
+    " set to 1, the vim will open the preview window once enter the markdown
+    " buffer
+
+    let g:mkdp_auto_open = 0
+    " set to 1, the vim will auto open preview window when you edit the
+    " markdown file
+
+    let g:mkdp_auto_close = 1
+    " set to 1, the vim will auto close current preview window when change
+    " from markdown buffer to another buffer
+
+    let g:mkdp_refresh_slow = 0
+    " set to 1, the vim will just refresh markdown when save the buffer or
+    " leave from insert mode, default 0 is auto refresh markdown as you edit or
+    " move the cursor
+
+    let g:mkdp_command_for_global = 0
+    " set to 1, the MarkdownPreview command can be use for all files,
+    " by default it just can be use in markdown file
+    ```
+
+
+
+----
