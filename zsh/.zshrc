@@ -101,3 +101,6 @@ alias tmuxconf='vim ~/.tmux.conf'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# 将服务器地址设为环境变量
+ip=115.159.212.140
+export ip
