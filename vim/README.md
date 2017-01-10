@@ -36,6 +36,15 @@ nmap <Leader>q :q<CR>
 ```
 
 ##2.插件设置
+###vim-plug
+- 安装
+
+
+    ```
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ```
+
 ###DoxygenToolkit
 comment plugin for C, C++ or Python function or class
 
@@ -218,3 +227,5 @@ markdown预览插件
 
 
 ----
+
+
