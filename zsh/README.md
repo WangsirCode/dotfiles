@@ -42,7 +42,30 @@ alias rmpng='rm ~/Desktop/*.png'
     ```
     plugins=( [plugins...] autojump)
     ```
+ 
+####usage
+ 
+ - Jump To A Directory That Contains foo:  
+
+      
+     ```
+     j foo
+     ```
+
+- Jump To A Child Directory:
+
+    ```
+    jc bar
+    ```
     
+- Open File Manager To Directories (instead of jumping):
+
+    ```
+    jo music
+    ```
+    
+ 
+ 
 
     
 ----
