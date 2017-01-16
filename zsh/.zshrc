@@ -87,8 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias server="ssh -i ~/.ssh/mykey ubuntu@115.159.212.140"
 alias ll='ls -l -h'
-alias python='python3'
-alias -s py=vim
 alias -s c=vim
 alias -s zsh=vim
 alias o='open'
