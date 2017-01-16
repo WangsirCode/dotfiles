@@ -74,36 +74,9 @@ map <C-n> :NERDTreeToggle<CR>
 "open taglist with Ctrl + m
 map <C-m> :TlistOpen<CR>
 
-" markdown-preview.vim
-" path to the chrome or the command to open chrome(or other modern browsers)
-let g:mkdp_path_to_chrome = "google-chrome"
-" set to 1, the vim will open the preview window once enter the markdown
-"buffer
-let g:mkdp_auto_start = 1 
-" set to 1, the vim will auto open preview window when you edit the
-"markdown file
-let g:mkdp_auto_open = 1
-" set to 1, the vim will auto close current preview window when change
-"from markdown buffer to another buffer
-let g:mkdp_auto_close = 1
-
-" set to 1, the vim will just refresh markdown when save the buffer or
-"leave from insert mode, default 0 is auto refresh markdown as you edit or move the cursor
-let g:mkdp_refresh_slow = 0
-" set to 1, the MarkdownPreview command can be use for all files,
-" by default it just can be use in markdown file
-let g:mkdp_command_for_global = 0
 "一些系统快捷键设置
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
-" 定义快捷键保存当前窗口内容
-nmap <Leader>w :w<CR>
-" 定义快捷键保存所有窗口内容并退出 vim
-nmap <Leader>WQ :wa<CR>:q<CR>
-" 不做任何保存，直接退出 vim
-nmap <Leader>Q :qa!<CR>
-nmap <Leader>, :bp<CR>
-nmap <Leader>. :bn<CR>
 " 定义快捷键到行首和行尾
 nmap LB 0
 nmap LE $
@@ -113,9 +86,24 @@ vnoremap <Leader>y "+y
 nmap <Leader>p "+p
 " 定义快捷键关闭当前分割窗口
 nmap <Leader>q :q<CR>
-
-
-
+" 定义快捷键保存当前窗口内容
+nmap <Leader>w :w<CR>
+" 定义快捷键保存所有窗口内容并退出 vim
+nmap <Leader>WQ :wa<CR>:q<CR>
+" 不做任何保存，直接退出 vim
+nmap <Leader>Q :qa!<CR>
+" 依次遍历子窗口
+nnoremap nw <C-W><C-W>
+" 跳转至右方的窗口
+nnoremap <Leader>lw <C-W>l
+" 跳转至左方的窗口
+nnoremap <Leader>hw <C-W>h
+" 跳转至上方的子窗口
+nnoremap <Leader>kw <C-W>k
+" 跳转至下方的子窗口
+nnoremap <Leader>jw <C-W>j
+" 定义快捷键在结对符之间跳转
+nmap <Leader>M %
 " vundle 环境设置
 "filetype off
 "set rtp+=~/.vim/bundle/Vundle.vim
