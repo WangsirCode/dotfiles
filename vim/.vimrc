@@ -21,8 +21,9 @@ set laststatus=2
 set ruler
 set hlsearch
 set cursorline
+"开启文件类型侦测
 filetype on
-"开启文件检测
+"根据侦测到的不同类型加载对应的插件
 filetype plugin on
   
 " 代码缩进
@@ -42,7 +43,6 @@ set softtabstop=4
 let g:ycm_python_binary_path = 'python'
 let python_highlight_all=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "vim-indent-guides相关设置
 " 随 vim 自启动
@@ -130,7 +130,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/fzf.vim'
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
 call plug#end()
+
 "filetype plugin indent on
