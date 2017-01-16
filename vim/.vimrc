@@ -7,21 +7,29 @@ syntax on
 " 让配置变更立即生效
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+" 定义快捷键的前缀，即<Leader>
+let mapleader=";"
+
 set background=dark
 colorscheme molokai 
+
 set encoding=utf-8
 " 开启实时搜索功能
 set incsearch
 " 搜索时大小写不敏感
 set ignorecase
+" 关闭兼容模式
 set nocompatible
 " vim 自身命令行模式智能补全
 set wildmenu
 "总是显示状态栏
 set laststatus=2
 
+" 显示光标当前位置
 set ruler
+" 高亮显示搜索结果
 set hlsearch
+" 高亮显示当前行
 set cursorline
 "开启文件类型侦测
 filetype on
@@ -73,9 +81,10 @@ map <C-n> :NERDTreeToggle<CR>
 "open taglist with Ctrl + m
 map <C-m> :TlistOpen<CR>
 
+" *.cpp 和 *.h 间切换
+nmap <silent> <Leader>sw :FSHere<CR>
+
 "一些系统快捷键设置
-" 定义快捷键的前缀，即<Leader>
-let mapleader=";"
 " 定义快捷键到行首和行尾
 nmap LB 0
 nmap LE $
@@ -119,6 +128,7 @@ Plug 'vim-scripts/The-NERD-tree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'derekwyatt/vim-fswitch'
 Plug 'junegunn/fzf.vim'
 call plug#end()
 
