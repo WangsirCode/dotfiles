@@ -8,8 +8,7 @@ syntax on
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 set background=dark
-colorscheme desert 
-let g:solarized_termcolors=256
+colorscheme molokai 
 set encoding=utf-8
 " 开启实时搜索功能
 set incsearch
