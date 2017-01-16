@@ -4,6 +4,9 @@ syntax enable
 " 允许用指定语法高亮配色方案替换默认方案
 syntax on
 
+" 让配置变更立即生效
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
 set background=dark
 colorscheme desert 
 let g:solarized_termcolors=256
