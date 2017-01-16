@@ -16,3 +16,5 @@
 [user]
 	name = 汪宇豪
 	email = 781952273@qq.com
+[push]
+	default = simple
