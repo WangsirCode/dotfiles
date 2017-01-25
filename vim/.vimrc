@@ -11,7 +11,7 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 let mapleader=";"
 
 set background=dark
-colorscheme molokai 
+colorscheme desert 
 
 set encoding=utf-8
 " 开启实时搜索功能
