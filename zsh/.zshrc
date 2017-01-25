@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx tmux last-working-dir extract sudo)
+plugins=(ubuntu autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx tmux last-working-dir extract sudo)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -87,8 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias server="ssh -i ~/.ssh/mykey ubuntu@115.159.212.140"
 alias ll='ls -l -h'
-alias python='python3'
-alias -s py=vim
 alias -s c=vim
 alias -s zsh=vim
 alias o='open'
@@ -98,6 +96,7 @@ alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias rmpng='rm ~/Desktop/*.png'
 alias tmuxconf='vim ~/.tmux.conf'
+alias szsh='source ~/.zshrc'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
