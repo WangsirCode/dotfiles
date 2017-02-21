@@ -96,6 +96,7 @@ alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias rmpng='rm ~/Desktop/*.png'
 alias tmuxconf='vim ~/.tmux.conf'
+alias clc='clear'
 alias szsh='source ~/.zshrc'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -103,3 +104,5 @@ alias szsh='source ~/.zshrc'
 # 将服务器地址设为环境变量
 ip=115.159.212.140
 export ip
+makeOS=/Volumes/Transcend/code/makeOS
+export makeOS
