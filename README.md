@@ -1,11 +1,11 @@
-#some config files in osx
-##Packages
+# some config files in osx
+## Packages
 - vim       configuration for vim and gvim
 - zsh       need `oh-my-zsh` installed
 - tmux      custom shortcut prefix and etc...
 - git       git username, email and default editor config
 
-##Usage
+## Usage
 Using [GNU Stow](http://www.gnu.org/software/stow/) to symlink them to ~/ directory.
 
 ```
