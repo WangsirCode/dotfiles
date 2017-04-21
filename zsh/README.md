@@ -92,7 +92,7 @@ alias rmpng='rm ~/Desktop/*.png'
 1. Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
 
     ``` 
-    git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
     ```
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load:
