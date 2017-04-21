@@ -1,5 +1,5 @@
-#vim相关配置
-##1.快捷键设置
+# vim相关配置
+## 1.快捷键设置
 ```
 "一些系统快捷键设置
 " 定义快捷键的前缀，即<Leader>
@@ -35,8 +35,8 @@ nmap <Leader>p "+p
 nmap <Leader>q :q<CR>
 ```
 
-##2.插件设置
-###vim-plug
+## 2.插件设置
+### vim-plug
 - 安装
 
 
@@ -45,7 +45,7 @@ nmap <Leader>q :q<CR>
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
 
-###DoxygenToolkit
+### DoxygenToolkit
 comment plugin for C, C++ or Python function or class
 
 - **使用**
@@ -56,7 +56,7 @@ comment plugin for C, C++ or Python function or class
 
 ----
 
-###youCompleteme
+### youCompleteme
 - 配置
     
     ```
@@ -67,7 +67,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###ctrlp
+### ctrlp
 
 -  使用
 
@@ -77,7 +77,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###tagbar
+### tagbar
 - 配置
 
     ```
@@ -87,7 +87,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###delimitMate
+### delimitMate
 - 使用
 
     ```
@@ -97,7 +97,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###NERDTree
+### NERDTree
 1. 配置
 
    ```
@@ -130,7 +130,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###tagList
+### tagList
 显示文件中结构体，函数定义等信息
 
 1. 配置
@@ -149,7 +149,7 @@ comment plugin for C, C++ or Python function or class
 
 ----
 
-###nerdcommenter
+### nerdcommenter
 快速注释插件
 
 - 使用
@@ -167,7 +167,7 @@ comment plugin for C, C++ or Python function or class
     
 ----
 
-###fzf
+### fzf
 模糊查找插件
 
 - 使用
@@ -179,7 +179,7 @@ comment plugin for C, C++ or Python function or class
 
 ----
 
-###vim-fswitch
+### vim-fswitch
 .c .h快速切换插件
 
 - 使用
