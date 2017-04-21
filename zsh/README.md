@@ -1,5 +1,5 @@
-#zsh配置
-##1.installation
+# zsh配置
+## 1.installation
 1. sudo agt-get install zsh
 2. chsh -s /bin/zsh
 3. install oh-my-zsh
@@ -9,7 +9,7 @@
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
 
-##2.alias
+## 2.alias
 ```
 alias server="ssh -i ~/Downloads/mykey ubuntu@115.159.212.140"
 alias ll='ls -l'
@@ -24,9 +24,9 @@ alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias rmpng='rm ~/Desktop/*.png'
 ```
-##3.plugin
+## 3.plugin
 
-###autojump
+### autojump
 
 1. brew install autojump (mac)
   sodu apt-get install autojump(linux)
@@ -43,7 +43,7 @@ alias rmpng='rm ~/Desktop/*.png'
     plugins=( [plugins...] autojump)
     ```
  
-####usage
+#### usage
  
  - Jump To A Directory That Contains foo:  
 
@@ -70,7 +70,7 @@ alias rmpng='rm ~/Desktop/*.png'
     
 ----
 
-###zsh-syntax-highlighting
+### zsh-syntax-highlighting
 
 1. Clone this repository in oh-my-zsh's plugins directory
 
@@ -88,7 +88,7 @@ alias rmpng='rm ~/Desktop/*.png'
     
 ---
 
-###zsh-autosuggestions
+### zsh-autosuggestions
 1. Clone this repository somewhere on your machine. This guide will assume ~/.zsh/zsh-autosuggestions.
 
     ``` 
