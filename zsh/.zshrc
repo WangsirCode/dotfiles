@@ -112,3 +112,6 @@ eval $(thefuck --alias)
 export TESSDATA_PREFIX='/Volumes/Transcend/Code'
 alias ppt2pdf='soffice  --headless --convert-to pdf'
 /Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning
+
+# env varibles
+export lpath='/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
