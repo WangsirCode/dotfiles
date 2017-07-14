@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias server="ssh -i ~/.ssh/mykey ubuntu@115.159.212.140"
+alias server="ssh -i ~/.ssh/puckey ubuntu@119.29.6.77"
 alias ll='ls -l -h'
 alias -s c=vim
 alias -s zsh=vim
@@ -100,9 +100,15 @@ alias clc='clear'
 alias szsh='source ~/.zshrc'
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+alias toln='cd /Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
 # 将服务器地址设为环境变量
-ip=115.159.212.140
+ip=119.29.6.77
 export ip
 makeOS=/Volumes/Transcend/code/makeOS
 export makeOS
+alias conn_eic_cpu="ssh seed17@122.205.5.5 -p 22223"
+
+eval $(thefuck --alias)
+export TESSDATA_PREFIX='/Volumes/Transcend/Code'
+alias ppt2pdf='soffice  --headless --convert-to pdf'
+/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning
