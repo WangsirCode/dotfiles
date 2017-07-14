@@ -98,20 +98,19 @@ alias rmpng='rm ~/Desktop/*.png'
 alias tmuxconf='vim ~/.tmux.conf'
 alias clc='clear'
 alias szsh='source ~/.zshrc'
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias toln='cd /Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
-# 将服务器地址设为环境变量
-ip=119.29.6.77
-export ip
-makeOS=/Volumes/Transcend/code/makeOS
-export makeOS
+alias toln='cd $lpath'
 alias conn_eic_cpu="ssh seed17@122.205.5.5 -p 22223"
-
-eval $(thefuck --alias)
-export TESSDATA_PREFIX='/Volumes/Transcend/Code'
 alias ppt2pdf='soffice  --headless --convert-to pdf'
-/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning
 
 # env varibles
 export lpath='/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
+export ip=119.29.6.77
+export TESSDATA_PREFIX='/Volumes/Transcend/Code'
+
+
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval $(thefuck --alias)
+
+
