@@ -7,6 +7,8 @@ syntax on
 " 让配置变更立即生效
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+set backspace=2
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 
@@ -53,6 +55,9 @@ set softtabstop=4
 let g:ycm_python_binary_path = 'python'
 let python_highlight_all=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "vim-indent-guides相关设置
 " 随 vim 自启动
