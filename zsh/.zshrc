@@ -101,7 +101,7 @@ alias szsh='source ~/.zshrc'
 alias toln='cd $lpath'
 alias conn_eic_cpu="ssh seed17@122.205.5.5 -p 22223"
 alias ppt2pdf='soffice  --headless --convert-to pdf'
-
+alias youtube='youtube-dl --proxy localhost:1087'
 # env varibles
 export lpath='/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
 export ip=119.29.6.77
