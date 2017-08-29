@@ -106,7 +106,7 @@ alias youtube='youtube-dl --proxy localhost:1087'
 export lpath='/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
 export ip=119.29.6.77
 export TESSDATA_PREFIX='/Volumes/Transcend/Code'
-
+export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
