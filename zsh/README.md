@@ -1,6 +1,6 @@
 # zsh配置
 ## 1.installation
-1. sudo agt-get install zsh
+1. sudo apt-get install zsh
 2. chsh -s /bin/zsh
 3. install oh-my-zsh
 
