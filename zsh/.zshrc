@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias server="ssh -i ~/.ssh/puckey ubuntu@119.29.6.77"
+alias server='ssh -i ~/.ssh/ubutn.dms ubuntu@123.206.120.254'
 alias ll='ls -l -h'
 alias -s c=vim
 alias -s zsh=vim
@@ -103,14 +103,14 @@ alias conn_eic_cpu="ssh seed17@122.205.5.5 -p 22223"
 alias topdf='soffice  --headless --convert-to pdf'
 alias pdf='topdf *.ppt *.PPT *.doc *.docx && rm *.ppt *.PPT *.doc *.docx'
 alias youtube='youtube-dl --proxy localhost:1087'
-alias python=python3
 alias pip=pip3
+alias fn='ls -l |grep "^-"|wc -l'
 # env varibles
 export lpath='/Users/wangyuhao/Library/Mobile Documents/com~apple~CloudDocs/learning'
 export ip=119.29.6.77
 export TESSDATA_PREFIX='/Volumes/Transcend/Code'
 export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
-
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
