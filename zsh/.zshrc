@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(ubuntu autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx tmux last-working-dir extract sudo)
+plugins=(ubuntu autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx last-working-dir extract sudo k)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -104,7 +104,6 @@ alias fn='ls -l |grep "^-"|wc -l'
 alias bd=". bd -si"
 # env varibles
 
-export TESSDATA_PREFIX='/Volumes/Transcend/Code'
 export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
