@@ -86,7 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -l -h'
-alias fzf='code $(fzf)' 
 alias -s c=code
 alias -s zsh=code
 alias -s cpp=code
