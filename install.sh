@@ -37,9 +37,7 @@ if [ $ERROR_CODE != 0 ]; then
     exit 1
 fi
 
-#3. revise zsh profile 
-git clone git@github.com:WangsirCode/dotfiles.git
-cd ~/.dotfiles
+#3. revise zsh profile
 rm ~/.zshrc
 stow zsh
 
