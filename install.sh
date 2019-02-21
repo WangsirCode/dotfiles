@@ -2,7 +2,7 @@
 install_dependace()
 {
     if type $1 >/dev/null 2>&1; then 
-        echo 'already installed $1' 
+        echo already installed $1
     else 
         sysOS=`uname -s`
         if [ $sysOS == "Darwin" ];then
