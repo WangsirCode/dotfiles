@@ -4,21 +4,24 @@ install_dependace()
     if type $1 >/dev/null 2>&1; then 
         echo 'already installed $1' 
     else 
-        if ["$(uname)"=="Darwin"];then    # Mac OS X 操作系统
+        sysOS=`uname -s`
+        if [ $sysOS == "Darwin" ];then
             brew install $1
-        elif ["$(expr substr $(uname -s) 1 5)"=="Linux"];then    # linux 
+        elif [ $sysOS == "Linux" ];then
             sudo apt-get install $1
+        else
+            echo "Other OS: $sysOS"
+            exit 1
         fi
     fi
-    
 }
 
 #1. install dependance
-dependances=("wget" "stow" "zsh" "autojump")
+dependances=("wget" "stow" "zsh" "autojump" "thefuck")
 
 for dependance in ${dependances[@]}
 do
-    install_dependace(dependance)
+    install_dependace $dependance
     ERROR_CODE=$?
     if [ $ERROR_CODE != 0 ]; then
 		echo install $(dependance) failed!
