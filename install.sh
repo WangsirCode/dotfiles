@@ -74,6 +74,13 @@ config_zsh()
     source ~/.zshrc
 }
 
+config_vim()
+{
+    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+}
+
 install_dependences
 
 config_zsh
+config_vim
