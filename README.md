@@ -6,18 +6,11 @@
 - git       git username, email and default editor config
 
 ## Usage
-Using [GNU Stow](http://www.gnu.org/software/stow/) to symlink them to ~/ directory.
 
 ```
 git clone https://github.com/WangsirCode/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-
-# install package for an specified configuration
-stow <package-name>
-# uninstall
-stow -D <package-name>
-# install to specified path
-sudo stow zsh -t /
+./install.sh
 ```
 
 Inspired by
