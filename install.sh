@@ -2,8 +2,6 @@
 
 depends="stow wget zsh autojump tmux thefuck"
 
-installer=brew
-
 install_dependence()
 {
     which $1 > /dev/null 2>&1
@@ -41,6 +39,12 @@ install_zsh_plugin()
     echo "install zsh-autosuggestions"
     git clone git://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+    echo "install zsh-completions"
+    git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+    echo "install zsh-you-should-use"
+    git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+
 }
 
 config_zsh()
@@ -70,7 +74,6 @@ config_zsh()
     source ~/.zshrc
 }
 
-
-
 install_dependences
+
 config_zsh

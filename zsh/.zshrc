@@ -52,8 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(ubuntu autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx last-working-dir extract sudo k)
-
+plugins=(zsh-completions ubuntu autojump zsh-syntax-highlighting zsh-autosuggestions git web-search  osx last-working-dir extract sudo you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,22 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -l -h'
-alias -s c=code
-alias -s zsh=code
-alias -s cpp=code
-alias -s py=code
-alias o='open'
-alias zshrc='code ~/.zshrc'
-alias vimrc='code ~/.vimrc'
-alias clc='clear'
-alias szsh='source ~/.zshrc'
-alias toln='cd $lpath'
-alias topdf='soffice  --headless --convert-to pdf'
-alias pdf='topdf *.ppt *.PPT *.doc *.docx && rm *.ppt *.PPT *.doc *.docx'
-alias youtube='youtube-dl --proxy localhost:1087'
-alias fn='ls -l |grep "^-"|wc -l'
-alias bd=". bd -si"
+
 # env varibles
 
 export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
@@ -109,4 +93,7 @@ export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
 
 eval $(thefuck --alias)
 
+# zsh-completion plugin
+autoload -U compinit && compinit
 
+source ~/.dotfiles/zsh/alias.zsh
