@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # env varibles
 
 export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
+export HOMEBREW_NO_AUTO_UPDATE=1
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
